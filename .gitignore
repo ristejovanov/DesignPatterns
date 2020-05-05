@@ -1,0 +1,13 @@
+
+*.v12.suo
+**/.vs/
+**/.vscode/
+**/*.user
+**/Exceptions/
+
+bin
+obj
+CrashDumps/
+
+Solutions/ipch/
+Output/
