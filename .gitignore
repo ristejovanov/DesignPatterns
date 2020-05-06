@@ -7,7 +7,9 @@
 
 bin
 obj
-CrashDumps/
-
+boost/
+boost
+bin/
+obj/
 Solutions/ipch/
 Output/
