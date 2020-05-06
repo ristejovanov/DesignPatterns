@@ -29,6 +29,7 @@
 
 
 #include "boostFlyweight.h"
+//#include "example.h"
 
 typedef uint32_t Kay;
 
@@ -93,6 +94,9 @@ boost::bimap<Kay, T> User<T>::_names{};
 
 int main()
 {
+	//usecase();
+
+
 	//user 1 tests -----------------------------
 
 	User<std::string> user1("Riste", "Jovanov");	

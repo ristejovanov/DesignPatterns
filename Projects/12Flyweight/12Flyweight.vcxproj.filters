@@ -19,5 +19,8 @@
     <ClInclude Include="src\boostFlyweight.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\example.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
