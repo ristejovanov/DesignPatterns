@@ -150,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\BrokerChain.h" />
+    <ClInclude Include="src\example.h" />
     <ClInclude Include="src\PointerChain.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
