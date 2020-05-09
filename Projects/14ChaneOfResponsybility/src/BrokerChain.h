@@ -90,7 +90,7 @@ class DoubleAttackModifier :public CreatureModifier
 		{
 			_conn = game._queries.connect([&](Query& q)
 			{
-					if (q._creatureName == creature.getCreatureName()
+					if (q._creatureName == _creature.getCreatureName()
 						&& q._argument == Query::Argument::attack)
 					{
 						q._result *= 2;
