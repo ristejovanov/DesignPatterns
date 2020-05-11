@@ -9,14 +9,16 @@
 // Query asking for information
 
 
-#include "BankAccount.h"
-
+//#include "BankAccount.h"
+#include "ComposidCommand.h"
 
 
 
 int main()
 {
-	testFunction();
+	//testFunction();
+
+	testFun();
 
 	return 0;
 }

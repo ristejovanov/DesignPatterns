@@ -15,14 +15,16 @@ public:
 			<< " balance now is " << m_balance << std::endl;
 	}
 
-	void withDrow(int amount)
+	bool withDrow(int amount)
 	{
 		if (m_balance - amount >= m_overDraftLimit)
 		{
 			m_balance -= amount;
 			std::cout << "withdrow " << amount
 				<< " balance now is " << m_balance << std::endl;
+			return true;
 		}
+		return false;
 	}
 
 	friend std::ostream& operator<<(std::ostream& os, BankAcount& obj)
@@ -41,6 +43,7 @@ private:
 struct Command
 {
 	virtual void call() = 0;
+	virtual void undo() = 0;
 };
 
 
@@ -57,6 +60,7 @@ class BankAccountCommand :Command
 			:m_bankAcount(account)
 			,m_action(action)
 			,m_amount(amount)
+			,m_succeeded(true)
 		{
 
 		}
@@ -67,19 +71,36 @@ class BankAccountCommand :Command
 			{
 			case BankAccountCommand::deposite:
 				m_bankAcount.deposit(m_amount);
+				m_succeeded = true;
 				break;
 			case BankAccountCommand::withdrow:
-				m_bankAcount.withDrow(m_amount);
+				m_succeeded =  m_bankAcount.withDrow(m_amount);
 				break;
 			}
 		}
 
+		void undo() override
+		{
+			if (!m_succeeded)
+				return;
 
+			switch (m_action)
+			{
+			case BankAccountCommand::deposite:
+				m_bankAcount.withDrow(m_amount);
+				break;
+			case BankAccountCommand::withdrow:
+				m_bankAcount.deposit(m_amount);
+				break;
+			}
+		}
 private:
 		BankAcount& m_bankAcount;
-		Action m_action;
-		int m_amount;
+		Action			m_action;
+		int					m_amount;
+		bool				m_succeeded;
 };
+
 
 
 void testFunction()
