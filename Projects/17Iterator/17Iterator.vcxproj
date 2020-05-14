@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{515C4BA9-6D16-48A7-8CDE-66F624DD184C}</ProjectGuid>
-    <RootNamespace>My16Interpreter</RootNamespace>
+    <ProjectGuid>{ADD68D7D-7378-4909-92B2-D94948538E31}</ProjectGuid>
+    <RootNamespace>My17Iterator</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
