@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{ADD68D7D-7378-4909-92B2-D94948538E31}</ProjectGuid>
-    <RootNamespace>My17Iterator</RootNamespace>
+    <ProjectGuid>{29B80800-EA02-41F2-AA72-9CF61C373507}</ProjectGuid>
+    <RootNamespace>My18Mediator</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -142,12 +142,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\ChatRoom.cpp" />
+    <ClCompile Include="src\Person.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\BinaryTree.h" />
-    <ClInclude Include="src\Teset.h" />
-    <ClInclude Include="src\myExample.h" />
+    <ClInclude Include="src\ChatRoom.h" />
+    <ClInclude Include="src\example.h" />
+    <ClInclude Include="src\Person.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
