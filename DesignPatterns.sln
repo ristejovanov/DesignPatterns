@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "17Iterator", "Projects\17It
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "18Mediator", "Projects\18Mediator\18Mediator.vcxproj", "{29B80800-EA02-41F2-AA72-9CF61C373507}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "19Memento", "Projects\19Memeto\19Memeto.vcxproj", "{C75AC0CC-8712-4D0A-A3BD-67FCB7A18EF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{29B80800-EA02-41F2-AA72-9CF61C373507}.Release|x64.Build.0 = Release|x64
 		{29B80800-EA02-41F2-AA72-9CF61C373507}.Release|x86.ActiveCfg = Release|Win32
 		{29B80800-EA02-41F2-AA72-9CF61C373507}.Release|x86.Build.0 = Release|Win32
+		{C75AC0CC-8712-4D0A-A3BD-67FCB7A18EF9}.Debug|x64.ActiveCfg = Debug|x64
+		{C75AC0CC-8712-4D0A-A3BD-67FCB7A18EF9}.Debug|x64.Build.0 = Debug|x64
+		{C75AC0CC-8712-4D0A-A3BD-67FCB7A18EF9}.Debug|x86.ActiveCfg = Debug|Win32
+		{C75AC0CC-8712-4D0A-A3BD-67FCB7A18EF9}.Debug|x86.Build.0 = Debug|Win32
+		{C75AC0CC-8712-4D0A-A3BD-67FCB7A18EF9}.Release|x64.ActiveCfg = Release|x64
+		{C75AC0CC-8712-4D0A-A3BD-67FCB7A18EF9}.Release|x64.Build.0 = Release|x64
+		{C75AC0CC-8712-4D0A-A3BD-67FCB7A18EF9}.Release|x86.ActiveCfg = Release|Win32
+		{C75AC0CC-8712-4D0A-A3BD-67FCB7A18EF9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
