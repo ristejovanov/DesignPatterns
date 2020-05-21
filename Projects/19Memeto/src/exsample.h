@@ -46,6 +46,5 @@ struct TokenMachine
     {
       tokens.push_back(it);
     }
-
   }
 };
