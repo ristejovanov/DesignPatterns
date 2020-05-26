@@ -1,40 +1,6 @@
 #pragma once
 #include <sstream>
 
-template <typename Visitable>
-struct Visitor
-{
-	virtual void visit(Visitable& obj) = 0;
-};
-
-struct VisitorBase // marker interface
-{
-	virtual ~VisitorBase() = default;
-};
-
-struct Expression
-{
-	virtual ~Expression() = default;
-
-	virtual void accept(VisitorBase& obj)
-	{
-		using EV = Visitor<Expression>;
-		if (auto ev = dynamic_cast<EV*>(&obj))
-			ev->visit(*this);
-	}
-};
-
-
-
-
-
-
-
-
-
-
-
-
 
 template<typename T>
 class Visitor

@@ -109,7 +109,7 @@ int main()
     }
   };
 
-
+  
   ExpressionPrinter ep;
   ep.visit(*e);
   cout << ep.str() << "\n";
